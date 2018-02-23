@@ -1,0 +1,29 @@
+[user]
+	name = Dinesh Alapati
+	email = dine.alapati@gmail.com
+[color]
+	status = auto
+	branch = auto
+	interactive = auto
+	diff = auto
+	ui = auto
+[core]
+	excludesfile = /Users/dineshalapati/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	st = status
+	co = checkout
+	ci = commit
+	rb = rebase
+	br = branch
+	ad = add -A
+	pu = push
+	pl = pull
+[commit]
+	template = /Users/dineshalapati/.stCommitMsg
